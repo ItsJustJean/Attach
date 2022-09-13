@@ -25,8 +25,8 @@ export const colors = getRandomTheme();
 export const random_theme_button = true;
 
 export const base_profile = {
-    first_name: "Jean-Elias",
-    last_name: "Mestre",
+    first_name: "John",
+    last_name: "Doe",
     subtitle: "Aspiring Software Developer",
     bio: ["Miami, FL", "Florida International University"],
     name() {
@@ -98,16 +98,16 @@ const projects_linksList = [
 
 const experiences = [
     {
-        company: "CodePath",
+        company: "Company X",
         meta: [
-            "Internship Course",
+            "Software Engineer Intern",
             "Jun 2022 - Aug 2022",
-            //"Space, Space",
+            "Space, Space",
         ],
         desc: [
-            "Worked in python in designated groups",
-            "Covered strings, lists, arrays, iterations, Algorithm Optimization Techniques, Time complexity, recursion, and hash maps",
-            "Solved hacker rank questions ",
+            "Did many things to improve the company",
+            "Hired a private inspector",
+            "Became superman!",
         ],
     },
     {
@@ -139,20 +139,20 @@ const games_linksList = [
 
 const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/jean-elias-6b759521b",
+        url: "https://www.linkedin.com/in/",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
     {
-        url: "https://github.com/ItsJustJean",
+        url: "https://github.com/",
         icon: "/icons/github.svg",
         title: "GitHub",
     },
     {
-        url: "mailto: JeanEliasDev@gmail.com",
+        url: "mailto: someone@gmail.com",
         title: "Email",
         icon: "/icons/email.svg",
-        content: "JeanEliasDev@gmail.com",
+        content: "someone@gmail.com",
     },
 ] as Link[];
 
@@ -174,9 +174,9 @@ export const sections = {
     "Work Experience": {
         experiences: experiences,
     },
-    /*Games: {
+    Games: {
         links: games_linksList,
-    },*/
+    },
     "Contact Me": {
         links: contactMe_linksList,
     },
