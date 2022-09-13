@@ -1,17 +1,16 @@
-app = "attach"
+# fly.toml file generated for smartcardsite on 2022-09-02T14:41:20-04:00
+
+app = "smartcardsite"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
-
-[mounts]
-  source="stats_data"
-  destination="/app/data"
 
 [env]
 
 [experimental]
   allowed_public_ports = []
   auto_rollback = true
+
 
 [[services]]
   http_checks = []
