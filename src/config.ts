@@ -25,10 +25,10 @@ export const colors = getRandomTheme();
 export const random_theme_button = true;
 
 export const base_profile = {
-    first_name: "John",
-    last_name: "Doe",
+    first_name: "Jean-Elias",
+    last_name: "Mestre",
     subtitle: "Aspiring Software Developer",
-    bio: ["Miami, FL", "Florida International University"],
+    bio: ["Miami, FL", "Florida International University", "Interested in Microsoft's Mouse without Borders Project"],
     name() {
         return this.first_name + " " + this.last_name;
     },
@@ -36,11 +36,11 @@ export const base_profile = {
 
 export const extended_profile = {
     gender: "Male", // You can input any gender
-    username: "Cobra", // You can opt out my commenting either of these
+    username: "ItsJustJean", // You can opt out my commenting either of these
 } as ExtendedProfile;
 
 export const skillsList = [
-    "Time management",
+   /* "Time management",
     "Communication",
     "Adaptability",
     "Problem-solving",
@@ -61,7 +61,7 @@ export const skillsList = [
     "Constructive feedback",
     "Active listening",
     "Self-management",
-    "Optimism",
+    "Optimism",*/
     "Calmness",
     "Analysis",
     "Self-motivation",
@@ -81,11 +81,11 @@ There are no required links, but each link must have:
  */
 const projects_linksList = [
     {
-        url: "https://google.com",
-        title: "Portfolio",
-        content: "By default, content is the url (view next to continue)",
+        url: "https://github.com/ItsJustJean/Projects",
+        title: "Banking Simulation",
+        //content: "By default, content is the url (view next to continue)",
     },
-    {
+    /*{
         url: "https://google.com",
         title: "Todo App",
         content: "but you can force content by specifying like this!",
@@ -93,66 +93,67 @@ const projects_linksList = [
     {
         url: "https://google.com",
         title: "And more!",
-    },
+    },*/
 ] as Link[];
 
 const experiences = [
     {
-        company: "Company X",
+        company: "CodePath",
         meta: [
-            "Software Engineer Intern",
+            "Internship Course",
             "Jun 2022 - Aug 2022",
-            "Space, Space",
+            //"Space, Space",
         ],
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Worked in python in designated groups",
+            "Covered strings, lists, arrays, iterations, Algorithm Optimization Techniques, Time complexity, recursion, and hash maps",
+            "Solved hacker rank questions ",
         ],
     },
     {
-        company: "Company Y",
+        company: "Freelance",
         meta: [
-            "Software Engineer Intern",
-            "Jun 2021 - Aug 2021",
-            "Space, Space",
+            "Computer Technician",
+            "Jan 2018 - Present",
+            //"Space, Space",
         ],
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Troubleshooting boot looping laptops, data recovery, basic maintenance, DIY liquid metal cooling",
+            "Chosen parts for a desktop tower and assembled them",
+            "tinkered with BIOS menus familiar with the extended basics of computing hardware",
         ],
     },
 ] as Experience[];
 
 const games_linksList = [
     {
-        url: "https://google.com",
-        title: "Game 1",
+        url: "https://gdsc.community.dev/florida-international-university/",
+        title: "Google Developer Student Club (GDSC)",
+        content: "member",
     },
     {
-        url: "https://google.com",
-        title: "Game 2",
-        content: "But I have more!",
+        url: "https://upe.cs.fiu.edu/",
+        title: "Upsilon Pi Epsilon (UPE)",
+        content: "member",
     },
 ] as Link[];
 
 const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/",
+        url: "https://www.linkedin.com/in/jean-elias-6b759521b",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
     {
-        url: "https://github.com/",
+        url: "https://github.com/ItsJustJean",
         icon: "/icons/github.svg",
         title: "GitHub",
     },
     {
-        url: "mailto: someone@gmail.com",
+        url: "mailto: JeanEliasDev@gmail.com",
         title: "Email",
         icon: "/icons/email.svg",
-        content: "someone@gmail.com",
+        content: "JeanEliasDev@gmail.com",
     },
 ] as Link[];
 
@@ -162,7 +163,7 @@ const contactMe_linksList = [
 export const sections = {
     // An example of a button. This button is a resume download
     Resume: {
-        url: "/Resume.docx",
+        url: "/Resume.pdf",
         download_name: `${base_profile.name()}_Resume.pdf`,
     },
     // An example of a list of projects, that is opened on load
@@ -174,7 +175,7 @@ export const sections = {
     "Work Experience": {
         experiences: experiences,
     },
-    Games: {
+    Clubs: {
         links: games_linksList,
     },
     "Contact Me": {
